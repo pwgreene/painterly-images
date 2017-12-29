@@ -2,3 +2,5 @@
 !Input/brush.png
 !Input/longBrush.png
 !Input/longBrush2.png
+*.DSYM
+_build
