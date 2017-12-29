@@ -38,14 +38,14 @@ LDFLAGS  := $(PNG_LIB) -L$(HALIDE_DIR)/bin/     -lz -lpthread -ldl -lncurses -lp
 %: %.cpp $(HALIDE_LIB)
 	$(CXX) $(CXXFLAGS) $< $(HALIDE_LIB) $(LDFLAGS) -o $@
 
-a10: a10_main.cpp a10.cpp basicImageManipulation.cpp filtering.cpp Image.cpp lodepng.cpp timing.cpp a10.h $(HALIDE_LIB)
+painterly: a10_main.cpp a10.cpp basicImageManipulation.cpp filtering.cpp Image.cpp lodepng.cpp timing.cpp a10.h $(HALIDE_LIB)
 	mkdir -p Output
 	$(CXX) $(CXXFLAGS) a10_main.cpp a10.cpp basicImageManipulation.cpp filtering.cpp Image.cpp lodepng.cpp timing.cpp $(HALIDE_LIB) $(LDFLAGS) -o $@
 
-run: a10
-	./a10
+run: painterly
+	./painterly
 
 clean:
-	$(RM) Output/* a`0
+	$(RM) Output/* painterly
 	$(RM) -rf *.dSYM
 	rm -rf Output
