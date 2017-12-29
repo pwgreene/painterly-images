@@ -2,6 +2,8 @@
 !Input/brush.png
 !Input/longBrush.png
 !Input/longBrush2.png
+!london-reference.png 
 *.DSYM
 _build
 Output
+
