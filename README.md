@@ -1,6 +1,6 @@
-# painterly-images
+# Halide Painterly Images
 
-Creates non-photorealistic renderings of images using the Halide image processing library for fast, scalable compuatations. 
+Creates non-photorealistic renderings of images using the [Halide](halide-lang.org) image processing language for fast, scalable compuatations. 
 
 To run from command line, cd to this directory and simply type
 
