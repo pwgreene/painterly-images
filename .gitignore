@@ -1,1 +1,4 @@
 *.png
+!Input/brush.png
+!Input/longBrush.png
+!Input/longBrush2.png
